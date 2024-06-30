@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baby Shazam</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        header {
+            background-color: #343a40;
+            color: white;
+            padding: 1rem 2rem;
+            text-align: center;
+        }
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+        .upload-container {
+            text-align: center;
+            border: 2px dashed #6c757d;
+            padding: 2rem;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .upload-container input[type="file"] {
+            display: none;
+        }
+        .upload-container label {
+            display: block;
+            padding: 1rem 2rem;
+            border: 2px solid #6c757d;
+            border-radius: 5px;
+            background-color: #e9ecef;
+            cursor: pointer;
+        }
+        .upload-container p {
+            margin-top: 1rem;
+            color: #6c757d;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 1rem 2rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Baby Shazam</h1>
+    </header>
+    <main>
+        <div class="upload-container">
+            <input type="file" id="fileUpload" accept="audio/*">
+            <label for="fileUpload">Upload Audio File</label>
+            <p>Choose an audio file to identify the Baby Sound</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Baby Shazam. All rights reserved.</p>
+    </footer>
+</body>
+</html>
